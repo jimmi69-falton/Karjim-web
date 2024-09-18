@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Childbed</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source  src="asset/Animated Gradient Background - After effects - Royalty Free - Sea Blue.webm" type="video/mp4">
+        </video>
+    </div>
+    <div class="account-bar">
+        <img class="close-icon" src="asset/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <input type="email" placeholder="Email" class="email">
+        <input type="password" placeholder="Password" class="password">
+        <button class="signin">Sign-in</button>
+        <p>Don't have an account ? <span class="signup">Sign-up</span> now !</p>
+    </div>
+    <header class="header"><img class="logo" src="asset/Remove-bg.ai_1726670707930.png" alt="Logo">
+    <div class="setting-bar">
+        <img class="setting-icon" id="dark-mode" src="asset/dark_mode_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="setting-icon" id="notifi" src="asset/notifications_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="setting-icon" id="setting" src="asset/settings_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+    </div>
+    </header>
+    <div class="noti-div">
+        <img id="close-noti" src="asset/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+        <h1 id="noti-center">Notifications Center</h1>
+        <div class="noti-content">    
+            <p>No Older Notifications</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <div class="navbar-item">
+            <li><a href="#">
+                <div class="icon">
+                <img src="asset/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                <span>Home</span>    
+                </div>
+            </a></li>
+            </div>
+            <div class="navbar-item">
+            <li>
+                <div class="icon" id="search-icon">
+                    <img src="asset/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                    <span>Search</span>
+                </div>
+            </li>
+            </div>
+            <div class="navbar-item">
+            <li><a href="#">
+                <div class="icon">
+                    <img src="asset/library_music_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                    <span>Library</span>
+                </div>
+            </a></li>
+            </div>
+            <div class="navbar-item">
+            <li><a href="#">
+                <div class="icon" id="account-item">
+                    <img src="asset/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                    <span>Account</span>
+                </div>
+            </a></li>
+            
+            </div>
+        </ul>
+        <input type="text" placeholder="Search..." class="search-bar">
+    </nav>
+    <div class="container">
+        <aside class="aside">
+            <div class="product">
+                <div class="song-content">
+                <img id="p-img"  src="asset/background.jpeg">
+                <span>Indie</span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="song-content">
+                <img id="p-img" src="asset/Enhance Your Desktop Experience with a Stunning, One-of-a-Kind AI-Generated Wallpaper.PNG">
+                <span>KARJIM original</span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="song-content">
+                <img id="p-img" src="asset/Premium Vector _ Microphone and headphones podcast silhouette logo design.jpeg">
+                <span>Poscast</span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="song-content">
+                <img id="p-img" src="asset/undefined.jpeg">
+                <span>Pop/RnB</span>
+                </div>
+            </div>
+        </aside>
+        <main class="main" id="song-list">
+           
+        </main>
+        <aside class="aside-right">
+            <div class="info-content">Song Details</div>
+            <div class="info-content">About the artis</div>
+            <div class="info-content">Credits</div>
+        </aside>
+    </div>
+    <footer class="footer">Copyright 2024 @Jimmi K-Nguyen Hoang Khanh</footer>
+    <div class="audio-player">
+        <div class="audio-player-content">
+            <div class="song-info">
+                <img src="https://github.com/jimmi69-falton/music-data/blob/main/music/indie.mp3?raw=true" alt="Song Cover" class="song-cover">
+                <div class="song-details">
+                    <p class="song-title">Song Title</p>
+                    <p class="song-artist">Artist Name</p>
+                </div>
+            </div>
+            <div class="all-control">
+            <div class="controls">
+                <button class="control-button" id="Previous"><img src="asset/skip_previous_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Previous"></button>
+                <button class="control-button" id="Play"><img class="playimg" src="asset/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Play"></button>
+                <button class="control-button" id="Next"><img src="asset/skip_next_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Next"></button>
+            </div>
+            <div class="progres">
+           <div class="progres-bar">
+           </div>
+            </div>
+            </div>
+            
+            <audio src="https://github.com/jimmi69-falton/music-data/blob/main/music/indie.mp3?raw=true" id="audio"></audio>
+            <div class="volume">
+            <div class="timer">
+                    <div class="time-choices">
+                        <div class="time-choice" data-time="10">10 minutes</div>
+                        <div class="time-choice" data-time="15">15 minutes</div>
+                        <div class="time-choice" data-time="30">30 minutes</div>
+                        <div class="time-choice" data-time="60">1 hours</div>
+                        <div class="time-choice" data-time="120">2 hours</div>
+                        <div class="time-choice" data-time="180">3 hours</div>
+                    </div>
+                <img class="timer-b" id="add-button" src="asset/library_add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+                <img class="timer-b" id="timer-button" src="asset/timer_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png">
+            </div>
+                <img id="volume-icon" src="asset/volume_up_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Volume">
+                <input type="range" min="0" max="100" value="50" class="volume-slider">
+            </div>
+        </div>
+    </div>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
